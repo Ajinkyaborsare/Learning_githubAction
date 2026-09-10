@@ -16,4 +16,3 @@ jobs:
     - run: docker build . -t bajinkya/next-js-app
     - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin 
     - run: docker push bajinkya/next-js-app:latest
-    
